@@ -1,24 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-5</title>
     <!-- tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- google-font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-<!-- lexend font family -->
-<style>
-    .lexend-font {
-  font-family: "Lexend", sans-serif; 
-}
-</style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- lexend font family -->
+    <style>
+        .lexend-font {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
 </head>
+
 <body class="lexend-font">
-    <header></header>
+    <header>
+        <!-- nav-bar -->
+        <nav class="bg-gray-200">
+            <div class="navbar bg-gray-100 w-full sm:w-11/12 sm:mx-auto">
+                <!-- nav-first -->
+                <div class="navbar-start">
+                    <button class="btn text-sm sm:text-base bg-green-400">Blog</button>
+                </div>
+                <!-- nav-center -->
+                <div class="navbar-center flex flex-col sm:flex-row items-center justify-center gap-2">
+
+                    <img class="h-8 sm:h-10 w-auto " src="./assets/logo.png" alt="">
+                    <h1 class="text-base lg:text-lg font-bold">Donate Bangladesh</h1>
+
+
+                </div>
+                <!-- nav-end -->
+                <div class="navbar-end flex gap-2">
+                    <img class="h-5 w-5 sm:h-6 sm:w-6" src="./assets/coin.png" alt="">
+                    <p class="text-sm sm:text-base"><span class="font-semibold">5000</span>BDT</p>
+                </div>
+
+
+               
+            </nav>
+
+            <!-- banner -->
+             <div>
+                <div class="w-11/12 mx-auto flex justify-center gap-5 mt-8">
+                    <button class="bg-green-400 btn btn-secondary">Donation</button>
+                    <button class="btn ">History</button>
+                </div>
+             </div>
+
+            
+            
+              
+       
+    </header>
+  
+
+
+
+
+
+
     <main></main>
 
 
@@ -27,4 +75,5 @@
     <script src="./js/donate.js"></script>
     <script src="./js/feature.js"></script>
 </body>
+
 </html>
