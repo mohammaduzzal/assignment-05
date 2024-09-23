@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <!-- tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- lexend font family -->
+    <style>
+        .lexend-font {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="lexend-font">
+    <header class="sticky top-0 z-50 backdrop-blur-lg bg-white/70">
+        <!-- nav-bar -->
+        <nav class="bg-gray-200">
+            <div class="navbar  w-full sm:w-11/12 sm:mx-auto">
+                <!-- nav-first -->
+                <div class="navbar-start">
+                    <a  href="index.html" class="btn text-sm sm:text-base bg-green-400">Home</a>
+                </div>
+                <!-- nav-center -->
+                <div class="navbar-center flex flex-col sm:flex-row items-center justify-center gap-2">
+
+                    <img class="h-8 sm:h-10 w-auto " src="./assets/logo.png" alt="">
+                    <h1 class="text-base lg:text-lg font-bold">Donate Bangladesh</h1>
+
+
+                </div>
+                <!-- nav-end -->
+                <div class="navbar-end flex gap-2">
+                    <img class="lg:h-5 lg:w-5" src="./assets/coin.png" alt="">
+                    <p class="text-sm sm:text-base"><span class="font-semibold">5000</span>BDT</p>
+                </div>
+
+
+               
+            </nav>
+
+            <!-- banner -->
+             <div>
+                <div class="w-11/12 mx-auto flex justify-center gap-5 mt-8">
+                    <button class="bg-green-400 btn btn-secondary">Donation</button>
+                    <button class="btn">History</button>
+                </div>
+             </div>
+
+            
+            
+              
+       
+    </header>
+  
+    <main class="my-20 w-11/12 mx-auto">
+        <h1 class="text-4xl font-bold mb-10">Important FAQ</h1>
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+              <div class="collapse-content">
+                <p>DOM is a programming interface for html document.it is like a bridge that connects your HTML to javascript,so that you can interact with and change the content,structure and style of your page using code.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+              <div class="collapse-content">
+                <p>
+                    Ways to Select Elements from the DOM: <br>
+                    1. document.getElementById() <br>
+                   This method selects an element by its ID. <br>
+                   2. document.querySelector() <br>
+                  This method selects the first element that matches a CSS selector (like a tag name, class, or ID) <br>
+                  3. document.querySelectorAll() <br>
+                  This method selects all elements that match a given CSS selector. It returns a NodeList, which is like an array of elements. <br>
+                  4. document.getElementsByClassName() <br>
+                This method selects all elements with a specific class name and returns an HTMLCollection (similar to an array).
+
+
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+              <div class="collapse-content">
+                <p>Event delegation is a way to handle events (like clicks) using a single event listener on a parent element instead of adding separate listeners to each child element. <br>
+                usefulness: <br>
+                1.Fewer Event Listeners: <br>
+
+                You only need one listener on a parent element instead of adding one to each child element. This saves memory and makes your code run faster. <br>
+                2.Handles New Elements Automatically: <br>
+
+                If you add new child elements later, the single listener on the parent will still work for them. You don’t have to set up new listeners each time. <br>
+                3.Easier to Maintain: <br>
+
+                Managing one event listener is simpler than managing many. It makes your code cleaner and easier to read <br>
+                4.Flexibility: <br>
+
+                You can easily handle different actions based on which child element was clicked. This means you can have one place in your code to handle multiple elements. 
+            </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+              <div class="collapse-content">
+                <p>
+                    1. To use getAttribute(), setAttribute(), and removeAttribute() for attributes. <br>
+                   2. Use the style property and classList for styles. <br>
+                    3. You can access attributes directly for common properties (like id and className).
+                </p>
+              </div>
+            </div>
+          </div>
+        
+            
+    </main>
+
+
+
+   
+</body>
+
+</html>
