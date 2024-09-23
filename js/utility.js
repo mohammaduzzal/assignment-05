@@ -3,12 +3,8 @@
 function getInputFieldValueById(id){
     const inputValue = document.getElementById(id).value;
     const inputNumber = parseFloat(inputValue);
-    if(isNaN(inputNumber) || inputNumber<= 0){
-        return
-    }
-    else{
-        return inputNumber
-    }
+    return inputNumber
+    
 }
 
 // getTextFieldValueById function
