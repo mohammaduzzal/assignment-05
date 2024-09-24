@@ -25,3 +25,10 @@ function getSectionByDivId(id){
     // showing div
     document.getElementById(id).classList.remove('hidden')
 }
+
+
+// success mgs function
+function showSuccessMessage(){
+    document.getElementById('success-div').classList.remove('hidden');
+
+}

@@ -23,6 +23,13 @@ document.getElementById('first-input-btn').addEventListener('click', function(){
 
    document.getElementById('money-from-nav').innerText = newMoneyFromDiv;
    document.getElementById('first-money-box').innerText = newFirstMoneyBoxValue;
+
+
+//    call success mgs function
+showSuccessMessage();
+
+   
+
 });
 
 // second child
@@ -46,6 +53,10 @@ document.getElementById('second-btn').addEventListener('click', function(){
 
     document.getElementById('money-from-nav').innerText = latestMoneyFromDiv;
     document.getElementById('second-money-box').innerText = newSecondMoneyBoxValue;
+
+    
+//    call success mgs function
+showSuccessMessage();
 })
 
 // third child
@@ -71,4 +82,8 @@ document.getElementById('third-btn').addEventListener('click', function(){
 
     document.getElementById('money-from-nav').innerText = updatedMoneyFromDiv;
     document.getElementById('third-money-box').innerText = newThirdMoneyBoxValue;
+
+    
+//    call success mgs function
+showSuccessMessage();
 })
