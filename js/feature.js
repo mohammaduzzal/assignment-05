@@ -6,6 +6,9 @@ document.getElementById('donation-first-btn').addEventListener('click', function
      // add and remove bg-color
      document.getElementById('history-first-btn').classList.remove('bg-green-400','text-white');
      document.getElementById('donation-first-btn').classList.add('bg-green-400','text-white');
+
+     
+    document.getElementById('history-div').classList.add('hidden');
 });
 
 // showing history div
@@ -15,6 +18,8 @@ document.getElementById('history-first-btn').addEventListener('click', function(
     // add and remove bg-color
     document.getElementById('history-first-btn').classList.add('bg-green-400','text-white');
     document.getElementById('donation-first-btn').classList.remove('bg-green-400','text-white');
+
+    document.getElementById('history-div').classList.remove('hidden')
 });
 
 // close confirmation btn

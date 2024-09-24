@@ -8,13 +8,15 @@ document.getElementById('first-input-btn').addEventListener('click', function(){
     const firstMoneyBoxValue = getTextFieldValueById('first-money-box');
     const firstInputValue = getInputFieldValueById('first-input-field');
 
+    const firstTagH = document.getElementById('first-h-tag').innerText;
+
     // violation check
     if(!firstInputValue || firstInputValue <= 0){
         alert('invalid donation amount')
         return;
     }
     if(firstInputValue> moneyFromNav){
-        alert('invalid donation amount')
+        alert('Insufficient balance')
         return
     }
    
@@ -28,7 +30,16 @@ document.getElementById('first-input-btn').addEventListener('click', function(){
 //    call success mgs function
 showSuccessMessage();
 
-   
+// history added
+const div = document.createElement('div');
+div.classList = "bg-white p-3 rounded-md border border-gray-300";
+div.innerHTML = `
+    <p class="text-xs text-gray-500">${new Date().toLocaleDateString()}</p>
+    <p class="text-xs text-gray-500"><span class="text-green-500">${firstInputValue}</span> tk. is Donated for ${firstTagH}</p>
+    
+`;
+
+   document.getElementById('div-container').appendChild(div)
 
 });
 
@@ -37,6 +48,8 @@ document.getElementById('second-btn').addEventListener('click', function(){
     const moneyFromNav = getTextFieldValueById('money-from-nav');
     const secondMoneyBoxValue =getTextFieldValueById('second-money-box');
     const secondInputValue = getInputFieldValueById('second-input-field');
+
+    const secondTagH = document.getElementById('second-h-tag').innerText;
     
     // violation check
     if(!secondInputValue || secondInputValue <= 0){
@@ -44,7 +57,7 @@ document.getElementById('second-btn').addEventListener('click', function(){
         return;
     }
     if(secondInputValue>moneyFromNav){
-        alert('invalid donation amount');
+        alert('Insufficient balance');
         return;
     }
 
@@ -57,6 +70,18 @@ document.getElementById('second-btn').addEventListener('click', function(){
     
 //    call success mgs function
 showSuccessMessage();
+
+// history added
+const div = document.createElement('div');
+div.classList = "bg-white p-3 rounded-md border border-gray-300";
+div.innerHTML = `
+    <p class="text-xs text-gray-500">${new Date().toLocaleDateString()}</p>
+    <p class="text-xs text-gray-500"><span class="text-green-500">${secondInputValue}</span> tk. is Donated for ${secondTagH}</p>
+    
+`;
+
+   document.getElementById('div-container').appendChild(div)
+
 })
 
 // third child
@@ -65,6 +90,7 @@ document.getElementById('third-btn').addEventListener('click', function(){
     const moneyFromNav = getTextFieldValueById('money-from-nav');
     const thirdMoneyBoxValue = getTextFieldValueById('third-money-box');
     const thirdInputValue = getInputFieldValueById('third-input-field');
+    const thirdTagH = document.getElementById('third-h-tag').innerText;
 
      // violation check
      if(!thirdInputValue || thirdInputValue <= 0){
@@ -72,7 +98,7 @@ document.getElementById('third-btn').addEventListener('click', function(){
         return;
     }
     if(thirdInputValue > moneyFromNav){
-        alert('invalid donation amount');
+        alert('Insufficient balance');
         return;
     }
 
@@ -86,4 +112,15 @@ document.getElementById('third-btn').addEventListener('click', function(){
     
 //    call success mgs function
 showSuccessMessage();
+
+// history added
+const div = document.createElement('div');
+div.classList = "bg-white p-3 rounded-md border border-gray-300";
+div.innerHTML = `
+    <p class="text-xs text-gray-500">${new Date().toLocaleDateString()}</p>
+    <p class="text-xs text-gray-500"><span class="text-green-500">${thirdInputValue}</span> tk. is Donated for ${thirdTagH}</p>
+    
+`;
+
+   document.getElementById('div-container').appendChild(div)
 })

@@ -1,6 +1,4 @@
 
-Functionalities
-
 When the "Donate Now" button is clicked:
 
 A meaningful notification will be added to the History section.
@@ -12,9 +10,7 @@ Date and time of the transaction.
 Donation amount.
 Donation name.
 
-------------------------------------------
-Challenges
-Static Modal: Display a static modal instead of an alert on a successful donation.
+
 
 
 
